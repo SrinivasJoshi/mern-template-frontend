@@ -12,7 +12,7 @@ export function Home() {
           A minimal template for your side projects with authentication ready to go.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <Button asChild size="lg">
+          <Button asChild size="lg" variant="outline">
             <Link to="/signin">Get Started</Link>
           </Button>
         </div>

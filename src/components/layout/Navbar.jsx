@@ -8,7 +8,7 @@ export function Navbar() {
   const { user } = useContext(AuthContext);
 
   return (
-    <nav className="border-b">
+    <nav className="bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center">
@@ -19,7 +19,7 @@ export function Navbar() {
             {user ? (
               <UserMenu />
             ) : (
-              <Button asChild variant="default">
+              <Button asChild variant="secondary">
                 <Link to="/signin">Sign In</Link>
               </Button>
             )}
